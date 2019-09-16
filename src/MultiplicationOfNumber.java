@@ -14,14 +14,11 @@ public class MultiplicationOfNumber {
 		}
 		System.out.println(mult);
 
-		multNumbers();
+		System.out.println(multNumbers(25));
 
 	}
 
-	public static int multNumbers() {
-		System.out.println("Enter the number:  ");
-		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
+	public static int multNumbers(int num) {
 		int rem = 0;
 		int mult = 1;
 		while (num != 0) {
@@ -31,7 +28,6 @@ public class MultiplicationOfNumber {
 		}
 		System.out.println(mult);
 		return mult;
-
 	}
 
 }
