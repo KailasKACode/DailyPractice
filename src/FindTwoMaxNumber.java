@@ -20,7 +20,7 @@ public class FindTwoMaxNumber {
 		productMbx(b);
 	}
 
-	public static void productMbx(int b[]) {
+	public static int[] productMbx(int b[]) {
 		int firstlarge = 0;
 		int secondlarge = 1;
 		for (int i = 0; i < b.length; i++) {
@@ -35,6 +35,7 @@ public class FindTwoMaxNumber {
 		int product = firstlarge * secondlarge;
 
 		System.out.println(firstlarge + "  " + secondlarge + "  Largest two products are:" + product);
+		return b;
 
 	}
 
