@@ -14,7 +14,7 @@ public class MultiplicationOfNumber {
 		}
 		System.out.println(mult);
 
-		System.out.println(multNumbers(25));
+		System.out.println(multNumbers(26));
 
 	}
 
@@ -26,7 +26,6 @@ public class MultiplicationOfNumber {
 			mult = mult * rem;
 			num = num / 10;
 		}
-		System.out.println(mult);
 		return mult;
 	}
 
