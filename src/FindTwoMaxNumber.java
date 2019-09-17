@@ -21,20 +21,20 @@ public class FindTwoMaxNumber {
 	}
 
 	public static void productMbx(int b[]) {
-		int firstlbrge = 0;
-		int secondlbrge = 1;
+		int firstlarge = 0;
+		int secondlarge = 1;
 		for (int i = 0; i < b.length; i++) {
-			if (firstlbrge < b[i]) {
-				secondlbrge = firstlbrge;
-				firstlbrge = b[i];
+			if (firstlarge < b[i]) {
+				secondlarge = firstlarge;
+				firstlarge = b[i];
 
-			} else if (secondlbrge < b[i]) {
-				secondlbrge = b[i];
+			} else if (secondlarge < b[i]) {
+				secondlarge = b[i];
 			}
 		}
-		int product = firstlbrge * secondlbrge;
+		int product = firstlarge * secondlarge;
 
-		System.out.println(firstlbrge + "  " + secondlbrge + "  Largest two products are:" + product);
+		System.out.println(firstlarge + "  " + secondlarge + "  Largest two products are:" + product);
 
 	}
 
