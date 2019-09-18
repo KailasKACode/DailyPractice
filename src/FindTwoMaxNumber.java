@@ -1,16 +1,23 @@
 
 public class FindTwoMaxNumber {
 	public static void main(String[] args) {
-		int a[] = { 1, 6, 3, 8, 9, 2, 15, 58 };
-		int temp = 0;
-		int i = a.length - 1;
-		for (; i >= 0; i--) {
-			System.out.print(" " + a[i]+"  ");
-		}
-		
-		
-
+		int b[] = { 1, 2, -4, -5, 3 };
+		System.out.println(Arrays.toString(getMaxProduct(b)));
 	}
 
+	public static int[] getMaxProduct(int b[]) {
+		int max = b[0] * b[1];
+		int[] arr = new int[2];
+		for (int i = 0; i < b.length - 1; i++) {
+			for (int j = i + 1; j < b.length; j++) {
+				if (max < b[i] * b[j]) {
+					max = b[i] * b[j];
+					arr[0] = b[i];
+					arr[1] = b[j];
+				}
+			}
+		}
+		return arr;
+	}
 
 }
